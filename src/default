@@ -8,15 +8,15 @@ server {
     listen 8008;
 
     location /static {
-        alias   /home/traxex/nalanda/phase3/kalite/static/;
+        alias   /var/www/ka-lite/kalite/static/;
     }
 
     location /media {
-        alias   /home/traxex/nalanda/phase3/kalite/media/;
+        alias   /var/www/ka-lite/kalite/media/;
     }
 
     location /content {
-        alias   /home/traxex/nalanda/phase3/content/;
+        alias   /var/www/ka-lite/kalite/content/;
     }
 
     location /favicon.ico {
