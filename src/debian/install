@@ -1,0 +1,5 @@
+nginx.conf etc/nginx/
+default etc/nginx/sites-available/
+default etc/nginx/sites-enabled/
+ka-lite.ini etc/uwsgi/apps-available/
+ka-lite.ini etc/uwsgi/apps-enabled/

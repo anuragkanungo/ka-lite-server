@@ -1,0 +1,7 @@
+src/debian/ka-lite-server*
+src/debian/files
+*.deb
+*.tar.gz
+*.build
+*.changes
+*.dsc

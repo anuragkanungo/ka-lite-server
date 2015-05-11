@@ -1,0 +1,31 @@
+
+upstream kalite {
+    server unix:///tmp/kalite
+}
+
+server {
+
+    listen 8008;
+
+    location /static {
+        alias   /home/traxex/nalanda/phase3/kalite/static/;
+    }
+
+    location /media {
+        alias   /home/traxex/nalanda/phase3/kalite/media/;
+    }
+
+    location /content {
+        alias   /home/traxex/nalanda/phase3/content/;
+    }
+
+    location /favicon.ico {
+        empty_gif;
+    }
+
+    location / {
+        uwsgi_pass kalite;
+        include uwsgi_params;
+    }
+
+}
