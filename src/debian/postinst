@@ -1,0 +1,15 @@
+#!/bin/sh
+# postinst script for ka-lite-server
+
+set -e
+
+case "$1" in
+			*)
+				/etc/init.d/nginx restart
+				/etc/init.d/uwsgi restart
+			;;
+esac
+
+#DEBHELPER#
+
+exit 0
