@@ -5,6 +5,7 @@ set -e
 case "$1" in
 			*)
 				/etc/init.d/nginx restart
+				/etc/init.d/uwsgi restart
 			;;
 esac
 

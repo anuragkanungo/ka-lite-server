@@ -1,9 +1,9 @@
 Source: ka-lite-server
 Section: gnome
 Priority: extra
-Maintainer: Jamie Alexandre <jamie@learningequality.org>
+Maintainer: Anurag Kanungo <anurag@learningequality.org>
 Build-Depends: 	debhelper (>= 9)
-Standards-Version: 3.9.4
+Standards-Version: 1.0
 Homepage: https://learningequality.org/
 
 Package: ka-lite-server
