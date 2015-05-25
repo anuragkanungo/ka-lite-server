@@ -9,4 +9,4 @@ To build the deb file, install the `devscripts` package and run the `./build_deb
 After building and install deb file, run :
 
 sudo service nginx restart
-sudo service uwsgi restart
+sudo service kalite restart
