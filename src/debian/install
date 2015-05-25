@@ -1,5 +1,4 @@
-nginx.conf etc/nginx/
 ka-lite etc/nginx/sites-available/
 ka-lite etc/nginx/sites-enabled/
-ka-lite.ini etc/uwsgi/apps-available/
-ka-lite.ini etc/uwsgi/apps-enabled/
+ka-lite.ini etc/kalite/
+kalite etc/init.d/

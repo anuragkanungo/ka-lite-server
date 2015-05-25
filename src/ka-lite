@@ -1,6 +1,6 @@
 
 upstream kalite {
-    server unix:///tmp/ka-lite
+    server unix:///tmp/ka-lite;
 }
 
 server {

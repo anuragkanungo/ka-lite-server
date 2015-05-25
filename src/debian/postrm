@@ -3,15 +3,10 @@
 set -e
 
 case "$1" in
-		purge)
-				rm -Rf "/etc/sites-available/ka-lite"
-				rm -Rf "/etc/sites-available/ka-lite"
-				rm -Rf "/etc/uwsgi/apps-available/ka-lite.ini"
-				rm -Rf "/etc/uwsgi/apps-enabled/ka-lite.ini"
-				rm -Rf "/tmp/ka-lite"
-		;;
+			*)
+				/etc/init.d/nginx restart
+			;;
 esac
 
 exit 0
-
 # vim: ts=2 sw=2

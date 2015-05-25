@@ -1,0 +1,25 @@
+#! /bin/sh
+### BEGIN INIT INFO
+# Provides: kalite
+# Description: This file starts and stops Kalite Uwsgi server
+# 
+### END INIT INFO
+
+case "$1" in
+ start)
+   sudo uwsgi -d --ini /etc/kalite/ka-lite.ini
+   ;;
+ stop)
+   killall -s INT /usr/local/bin/uwsgi
+   sleep 10
+   ;;
+ restart)
+   killall -s INT /usr/local/bin/uwsgi
+   sleep 10
+   sudo uwsgi -d --ini /etc/kalite/ka-lite.ini
+   ;;
+ *)
+   echo "Usage: kalite {start|stop|restart}" >&2
+   exit 3
+   ;;
+esac
