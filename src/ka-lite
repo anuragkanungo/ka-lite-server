@@ -16,7 +16,7 @@ server {
     }
 
     location /content {
-        alias   /var/www/ka-lite/kalite/content/;
+        alias   /var/www/ka-lite/content/;
     }
 
     location /favicon.ico {
